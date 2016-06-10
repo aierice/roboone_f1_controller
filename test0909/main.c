@@ -29,7 +29,7 @@ int main(void)
 	if(SysTick_Config(SystemCoreClock / 1000)){
 		while(1);
 	}
-	servo servo[30];
+/*	servo servo[30];
 	uint8_t i;
 	for(i = 1; i<=1; i++){
 		servo[i].flug = 1;
@@ -52,6 +52,18 @@ int main(void)
 		}
 		tdelay(1000);
     }
+*/
+	while(1){
+		while(!GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_0));
+		while( USART_GetFlagStatus( USART1,USART_FLAG_TXE)==RESET);
+		USART_SendData( USART1,0b10000001);
+		GPIO_SetBits(GPIOC,GPIO_Pin_8);
+		tdelay(1);
+		while( USART_GetFlagStatus( USART1,USART_FLAG_TXE)==RESET);
+		USART_SendData( USART1,0b00000001);
+		GPIO_ResetBits(GPIOC,GPIO_Pin_8);
+		tdelay(10);
+	}
 }
 
 void GPIO_Configuration(void){
