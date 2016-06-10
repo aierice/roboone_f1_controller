@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=test0909.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\test0909 -TC:\CooCox\CoIDE\configuration\ProgramData\test0909/arm-gcc-link.ld -g">
+      <target file="test0909.elf" lastModified="155396f4ae5">
+         <source file="..\obj\startup_stm32f10x_md_vl.o" lastModified="155396900d9"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="1553969016c"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="1553969025a"/>
+         <source file="..\obj\main.o" lastModified="155396f48d1"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="155396903fb"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="155396904a4"/>
+         <source file="..\obj\syscalls.o" lastModified="155396906f0"/>
+         <source file="..\obj\misc.o" lastModified="1553969077a"/>
+      </target>
+   </processor>
+</history>
