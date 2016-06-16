@@ -54,15 +54,26 @@ int main(void)
     }
 */
 	while(1){
-		while(!GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_0));
-		while( USART_GetFlagStatus( USART1,USART_FLAG_TXE)==RESET);
-		USART_SendData( USART1,0b10000001);
-		GPIO_SetBits(GPIOC,GPIO_Pin_8);
-		tdelay(1);
-		while( USART_GetFlagStatus( USART1,USART_FLAG_TXE)==RESET);
-		USART_SendData( USART1,0b00000001);
-		GPIO_ResetBits(GPIOC,GPIO_Pin_8);
-		tdelay(10);
+		if(!GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_0)){
+			while( USART_GetFlagStatus( USART1,USART_FLAG_TXE)==RESET);
+			USART_SendData( USART1,0b10000010);
+			GPIO_SetBits(GPIOC,GPIO_Pin_8);
+			tdelay(1);
+			while( USART_GetFlagStatus( USART1,USART_FLAG_TXE)==RESET);
+			USART_SendData( USART1,0b00000010);
+			GPIO_ResetBits(GPIOC,GPIO_Pin_8);
+			tdelay(10);
+		}
+		else {
+			while( USART_GetFlagStatus( USART1,USART_FLAG_TXE)==RESET);
+				USART_SendData( USART1,0b10000001);
+				GPIO_SetBits(GPIOC,GPIO_Pin_8);
+				tdelay(1);
+				while( USART_GetFlagStatus( USART1,USART_FLAG_TXE)==RESET);
+				USART_SendData( USART1,0b00000001);
+				GPIO_ResetBits(GPIOC,GPIO_Pin_8);
+				tdelay(10);
+		}
 	}
 }
 
