@@ -1,15 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=test0909.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\test0909 -TC:\CooCox\CoIDE\configuration\ProgramData\test0909/arm-gcc-link.ld -g">
-      <target file="test0909.elf" lastModified="15558b2c89e">
-         <source file="..\obj\startup_stm32f10x_md_vl.o" lastModified="15558b2be72"/>
-         <source file="..\obj\system_stm32f10x.o" lastModified="15558b2bf80"/>
-         <source file="..\obj\stm32f10x_gpio.o" lastModified="15558b2c028"/>
-         <source file="..\obj\main.o" lastModified="15558b2c120"/>
-         <source file="..\obj\stm32f10x_rcc.o" lastModified="15558b2c1e8"/>
-         <source file="..\obj\stm32f10x_usart.o" lastModified="15558b2c2ad"/>
-         <source file="..\obj\syscalls.o" lastModified="15558b2c500"/>
-         <source file="..\obj\misc.o" lastModified="15558b2c599"/>
+      <target file="test0909.elf" lastModified="157390fc24d">
+         <source file="..\obj\delay.o" lastModified="157390faf5d"/>
+         <source file="..\obj\motion.o" lastModified="157390fb046"/>
+         <source file="..\obj\startup_stm32f10x_md_vl.o" lastModified="157390fb154"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="157390fb2a6"/>
+         <source file="..\obj\initialsetting_controller.o" lastModified="157390fb393"/>
+         <source file="..\obj\initialsetting.o" lastModified="157390fb492"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="157390fb5c3"/>
+         <source file="..\obj\main.o" lastModified="157390fb6dd"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="157390fb81a"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="157390fb9c8"/>
+         <source file="..\obj\servo.o" lastModified="157390fbb42"/>
+         <source file="..\obj\syscalls.o" lastModified="157390fbe75"/>
+         <source file="..\obj\misc.o" lastModified="157390fbf69"/>
       </target>
    </processor>
 </history>
