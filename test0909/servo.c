@@ -1,8 +1,6 @@
 #include"stm32f10x.h"
 #include"delay.h"
 
-extern uint32_t timingdelay;
-
 typedef struct{
 	uint8_t flug;
 	uint8_t ID;

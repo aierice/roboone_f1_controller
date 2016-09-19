@@ -7,6 +7,7 @@
 #ifndef MOTION_H_
 #define MOTION_H_
 
+void switch_pattern(void);
 void motion_select(void);
 
 #endif

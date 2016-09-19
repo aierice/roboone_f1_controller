@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/I..\..\..\..\..\Users\歩\Documents\GitHub /I..\..\..\..\..\Users\歩\Documents\GitHub\roboone_f1_controller\test0909 /I..\..\..\..\..\Users\歩\Documents\GitHub\roboone_f1_controller /I..\..\..\..\..\Users\歩\Documents\GitHub\roboone_f1_controller\test0909\stm_lib /I..\..\..\..\..\Users\歩\Documents\GitHub\roboone_f1_controller\test0909\cmsis /I..\..\..\..\..\Users\歩\Documents\GitHub\roboone_f1_controller\test0909\cmsis_boot /I..\..\..\..\..\Users\歩\Documents\GitHub\roboone_f1_controller\test0909\stm_lib\inc">
+      <source file="..\..\..\cmsis_boot\stm32f10x.h" lastModified="1573868e202">
+         <include file="..\..\..\cmsis\core_cm3.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f10x.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f10x_conf.h"/>
+      </source>
+      <source file="..\..\..\delay.h" lastModified="157390f32a1">
+      </source>
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="1573868e5e0">
+      </source>
+      <source file="..\..\..\delay.c" lastModified="157390ca467">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\initialsetting.c" lastModified="157390639b5">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="1573868de1b">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_usart.h"/>
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\tim1.c" lastModified="1573e355667">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\delay.h"/>
+         <include file="..\..\..\motion.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="1573868de28">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\servo.c" lastModified="1573913cf4a">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\delay.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_gpio.h" lastModified="1573868de23">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_rcc.h" lastModified="1573868de24">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm3.h" lastModified="1573868e1f6">
+         <include file="..\..\..\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis\core_cmFunc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\misc.c" lastModified="1573868de26">
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\syscalls\syscalls.c" lastModified="1573868edcc">
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="1573868de29">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\motion.h" lastModified="1573debdb9b">
+      </source>
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="1573868e5df">
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="1573868de2b">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_usart.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="1573868de1e">
+      </source>
+      <source file="..\..\..\initialsetting_controller.c" lastModified="1573b7b1fbc">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\motion.c" lastModified="1573e348f48">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\delay.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="1573868de1d">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\misc.h" lastModified="1573868de21">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_usart.h" lastModified="1573868de25">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md_vl.c" lastModified="1573868de12">
+      </source>
+   </includePath>
+</dependencies>

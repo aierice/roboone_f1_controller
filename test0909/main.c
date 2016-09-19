@@ -2,12 +2,16 @@
 #include"initialsetting.h"
 #include"initialsetting_controller.h"
 #include"delay.h"
+#include"tim1.h"
 #include"servo.h"
 #include"motion.h"
 
-void GPIO_Configuration(void);
-void Conversepacket();
-void Conversepacket_torque();
+uint8_t precommand;
+uint8_t command;
+
+//void GPIO_Configuration(void);
+//void Conversepacket();
+//void Conversepacket_torque();
 //void Conversepacket(servo servo);
 //void Conversepacket_torque(servo servo);
 
@@ -17,7 +21,37 @@ int main(void)
 	GPIO_Configuration();
 	USART1_Configuration();
 	delay_Configuration();
+	precommand = 0b00000000;
+	uint8_t i;
 	while(1){
-		motion_select();
+		USART_SendData(USART1,(uint8_t)GPIO_ReadInputData(GPIOA));
+		GPIO_Write(GPIOC,GPIO_ReadInputData(GPIOA));
+		tdelay(100);
+//		motion_select();
+/*		for(i=0; i<=3; i++){
+			switch(i){
+			case 0:	GPIO_SetBits(GPIOC,GPIO_Pin_0);
+					break;
+			case 1:	GPIO_SetBits(GPIOC,GPIO_Pin_1);
+					break;
+			case 2:	GPIO_SetBits(GPIOC,GPIO_Pin_2);
+					break;
+			case 3:	GPIO_SetBits(GPIOC,GPIO_Pin_3);
+					break;
+			default: break;
+
+			case 0:	GPIO_Write(GPIOC,~0b00000001);
+					break;
+			case 1:	GPIO_Write(GPIOC,~0b00000010);
+					break;
+			case 2:	GPIO_Write(GPIOC,~0b00000100);
+					break;
+			case 3:	GPIO_Write(GPIOC,~0b00001000);
+					break;
+			default: break;
+			}
+			tdelay(1000);
+		}
+*/
 	}
 }
