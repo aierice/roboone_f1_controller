@@ -29,7 +29,7 @@
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/歩/Documents/GitHub/roboone_f1_controller/test0909/main.c" title="main.c" tooltip="C:/Users/歩/Documents/GitHub/roboone_f1_controller/test0909/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/test0909/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1024" selectionTopPixel="374"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1169" selectionTopPixel="374"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="servo.c" partName="servo.c" path="C:/Users/歩/Documents/GitHub/roboone_f1_controller/test0909/servo.c" title="servo.c" tooltip="C:/Users/歩/Documents/GitHub/roboone_f1_controller/test0909/servo.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/test0909/servo.c"/>
@@ -364,65 +364,50 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f10x_usart.c" tooltip="test0909/stm_lib/src/stm32f10x_usart.c">
-<persistable path="/test0909/stm_lib/src/stm32f10x_usart.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="make_motion.h" tooltip="shinkanjissou0412/cmsis_boot/make_motion.h">
+<persistable path="/shinkanjissou0412/cmsis_boot/make_motion.h"/>
 </file>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.welcome.ui.WelcomePage" name="" tooltip="">
-<persistable>
-<org.coocox.welcome.ui.WelcomePage/>
-</persistable>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="test.h" tooltip="shinkanjissou0412/cmsis_boot/test.h">
+<persistable path="/shinkanjissou0412/cmsis_boot/test.h"/>
 </file>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.welcome.ui.WelcomePage" name="" tooltip="">
-<persistable>
-<org.coocox.welcome.ui.WelcomePage/>
-</persistable>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f10x_gpio.c" tooltip="test0909/stm_lib/src/stm32f10x_gpio.c">
-<persistable path="/test0909/stm_lib/src/stm32f10x_gpio.c"/>
-</file>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.welcome.ui.WelcomePage" name="" tooltip="">
-<persistable>
-<org.coocox.welcome.ui.WelcomePage/>
-</persistable>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="test.c" tooltip="shinkanjissou0412/cmsis_boot/test.c">
+<persistable path="/shinkanjissou0412/cmsis_boot/test.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="millis.c" tooltip="shinkanjissou0412/cmsis_boot/millis.c">
 <persistable path="/shinkanjissou0412/cmsis_boot/millis.c"/>
 </file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="test_motion.c" tooltip="shinkanjissou0412/cmsis_boot/test_motion.c">
+<persistable path="/shinkanjissou0412/cmsis_boot/test_motion.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="motion_data.h" tooltip="shinkanjissou0412/cmsis_boot/motion_data.h">
+<persistable path="/shinkanjissou0412/cmsis_boot/motion_data.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="initialsetting.c" tooltip="shinkanjissou0412/cmsis_boot/initialsetting.c">
+<persistable path="/shinkanjissou0412/cmsis_boot/initialsetting.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f10x_usart.c" tooltip="test0909/stm_lib/src/stm32f10x_usart.c">
+<persistable path="/test0909/stm_lib/src/stm32f10x_usart.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f10x_gpio.c" tooltip="test0909/stm_lib/src/stm32f10x_gpio.c">
+<persistable path="/test0909/stm_lib/src/stm32f10x_gpio.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="make_motion.c" tooltip="shinkanjissou0412/cmsis_boot/make_motion.c">
 <persistable path="/shinkanjissou0412/cmsis_boot/make_motion.c"/>
-</file>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.welcome.ui.WelcomePage" name="" tooltip="">
-<persistable>
-<org.coocox.welcome.ui.WelcomePage/>
-</persistable>
-</file>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.welcome.ui.WelcomePage" name="" tooltip="">
-<persistable>
-<org.coocox.welcome.ui.WelcomePage/>
-</persistable>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usart3.c" tooltip="shinkanjissou0412/cmsis_boot/usart3.c">
 <persistable path="/shinkanjissou0412/cmsis_boot/usart3.c"/>
 </file>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor" name="" tooltip="">
-<persistable>
-<org.coocox.builder.ui.editors.ConfigEditor/>
-</persistable>
-</file>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor" name="" tooltip="">
-<persistable>
-<org.coocox.builder.ui.editors.ConfigEditor/>
-</persistable>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_conf.h" tooltip="shinkanjissou0412/cmsis_boot/stm32f4xx_conf.h">
 <persistable path="/shinkanjissou0412/cmsis_boot/stm32f4xx_conf.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="shinkanjissou0412/main.c">
-<persistable path="/shinkanjissou0412/main.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="initialsetting.c" tooltip="shinkanjissou0412/cmsis_boot/initialsetting.c">
+<persistable path="/shinkanjissou0412/cmsis_boot/initialsetting.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f10x_usart.c" tooltip="test0909/stm_lib/src/stm32f10x_usart.c">
+<persistable path="/test0909/stm_lib/src/stm32f10x_usart.c"/>
 </file>
 <file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>
-<subPage/>
+<persistable>&#x0A;<subPage/>
 </persistable>
 </file>
 </mruList>

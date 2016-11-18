@@ -32,11 +32,11 @@ int main(void)
 //		USART_SendData(USART1,(uint8_t)((uint8_t)~GPIO_ReadInputData(GPIOA)&0b00001111));
 //		tdelay(1000);
 		USART_SendData(USART1,(~GPIO_ReadInputData(GPIOA) >>4)|0b0000000010000000);
-		tdelay(1);
+		tdelay(5);
 		USART_SendData(USART1,~GPIO_ReadInputData(GPIOA)&0b0000000000001111);
-		tdelay(9);
+		tdelay(95);
 //		USART_SendData(USART1,(uint8_t)GPIO_ReadInputData(GPIOA));
-		GPIO_Write(GPIOC,GPIO_ReadInputData(GPIOA));
+		GPIO_Write(GPIOC,GPIO_ReadInputData(GPIOA)>>4);
 //		motion_select();
 /*		for(i=0; i<=3; i++){
 			switch(i){

@@ -264,7 +264,7 @@ Linker script and memory map
 
                 0x20002000                _eram = 0x20002000
 
-.text           0x08000000      0xb3c
+.text           0x08000000      0xb40
  *(.isr_vector)
  .isr_vector    0x08000000      0x124 ..\obj\startup_stm32f10x_md_vl.o
                 0x08000000                g_pfnVectors
@@ -363,29 +363,29 @@ Linker script and memory map
  .text.GPIO_Write
                 0x08000694       0x1c ..\obj\stm32f10x_gpio.o
                 0x08000694                GPIO_Write
- .text.main     0x080006b0       0x80 ..\obj\main.o
+ .text.main     0x080006b0       0x84 ..\obj\main.o
                 0x080006b0                main
  .text.RCC_GetClocksFreq
-                0x08000730      0x15c ..\obj\stm32f10x_rcc.o
-                0x08000730                RCC_GetClocksFreq
+                0x08000734      0x15c ..\obj\stm32f10x_rcc.o
+                0x08000734                RCC_GetClocksFreq
  .text.RCC_APB2PeriphClockCmd
-                0x0800088c       0x3c ..\obj\stm32f10x_rcc.o
-                0x0800088c                RCC_APB2PeriphClockCmd
+                0x08000890       0x3c ..\obj\stm32f10x_rcc.o
+                0x08000890                RCC_APB2PeriphClockCmd
  .text.USART_Init
-                0x080008c8      0x174 ..\obj\stm32f10x_usart.o
-                0x080008c8                USART_Init
+                0x080008cc      0x174 ..\obj\stm32f10x_usart.o
+                0x080008cc                USART_Init
  .text.USART_Cmd
-                0x08000a3c       0x40 ..\obj\stm32f10x_usart.o
-                0x08000a3c                USART_Cmd
+                0x08000a40       0x40 ..\obj\stm32f10x_usart.o
+                0x08000a40                USART_Cmd
  .text.USART_SendData
-                0x08000a7c       0x24 ..\obj\stm32f10x_usart.o
-                0x08000a7c                USART_SendData
+                0x08000a80       0x24 ..\obj\stm32f10x_usart.o
+                0x08000a80                USART_SendData
  .text.TIM1_CC_IRQHandler
-                0x08000aa0       0x20 ..\obj\tim1.o
-                0x08000aa0                TIM1_CC_IRQHandler
+                0x08000aa4       0x20 ..\obj\tim1.o
+                0x08000aa4                TIM1_CC_IRQHandler
  .text.USART1_Configuration
-                0x08000ac0       0x7c ..\obj\servo.o
-                0x08000ac0                USART1_Configuration
+                0x08000ac4       0x7c ..\obj\servo.o
+                0x08000ac4                USART1_Configuration
  *(.init)
  *(.fini)
  *crtbegin.o(.ctors)
@@ -401,35 +401,35 @@ Linker script and memory map
  *(.rodata*)
  *(.eh_fram e*)
 
-.glue_7         0x08000b3c        0x0
+.glue_7         0x08000b40        0x0
  .glue_7        0x00000000        0x0 linker stubs
 
-.glue_7t        0x08000b3c        0x0
+.glue_7t        0x08000b40        0x0
  .glue_7t       0x00000000        0x0 linker stubs
 
-.vfp11_veneer   0x08000b3c        0x0
+.vfp11_veneer   0x08000b40        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x08000b3c        0x0
+.v4_bx          0x08000b40        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x08000b3c        0x0
+.iplt           0x08000b40        0x0
  .iplt          0x00000000        0x0 ..\obj\delay.o
 
-.rel.dyn        0x08000b3c        0x0
+.rel.dyn        0x08000b40        0x0
  .rel.iplt      0x00000000        0x0 ..\obj\delay.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08000b3c                __exidx_start = .
+                0x08000b40                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x08000b3c                __exidx_end = .
-                0x08000b3c                __etext = .
-                0x08000b3c                _sidata = __etext
+                0x08000b40                __exidx_end = .
+                0x08000b40                __etext = .
+                0x08000b40                _sidata = __etext
 
-.data           0x20000000       0x28 load address 0x08000b3c
+.data           0x20000000       0x28 load address 0x08000b40
                 0x20000000                __data_start__ = .
                 0x20000000                _sdata = __data_start__
  *(vtable)
@@ -457,10 +457,10 @@ Linker script and memory map
                 0x20000028                __data_end__ = .
                 0x20000028                _edata = __data_end__
 
-.igot.plt       0x20000028        0x0 load address 0x08000b64
+.igot.plt       0x20000028        0x0 load address 0x08000b68
  .igot.plt      0x00000000        0x0 ..\obj\delay.o
 
-.bss            0x20000028        0x8 load address 0x08000b64
+.bss            0x20000028        0x8 load address 0x08000b68
                 0x20000028                . = ALIGN (0x4)
                 0x20000028                __bss_start__ = .
                 0x20000028                _sbss = __bss_start__
@@ -483,7 +483,7 @@ Linker script and memory map
  *(.heap*)
                 0x20000030                __HeapLimit = .
 
-.co_stack       0x20000030      0x400 load address 0x08000b6c
+.co_stack       0x20000030      0x400 load address 0x08000b70
                 0x20000030                . = ALIGN (0x8)
  *(.co_stack .co_stack.*)
  .co_stack      0x20000030      0x400 ..\obj\startup_stm32f10x_md_vl.o
